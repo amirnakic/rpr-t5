@@ -140,7 +140,8 @@
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Label fx:id="display" layoutX="6.0" layoutY="6.0" prefHeight="74.0" prefWidth="284.0">
+        <Label fx:id="display" text="${controller.tekst}" layoutX="6.0" layoutY="6.0" prefHeight="74.0"
+               prefWidth="284.0">
             <font>
                 <Font size="36.0"/>
             </font>

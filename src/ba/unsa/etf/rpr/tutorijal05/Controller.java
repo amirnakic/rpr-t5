@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 
 public class Controller {
 
+    private SimpleStringProperty tekst;
+
     public Button btn1;
     public Button btn2;
     public Button btn3;
@@ -26,7 +28,20 @@ public class Controller {
     public Button dotBtn;
     public Label display;
 
-    public void percentCllick(ActionEvent actionEvent) {
+    public Controller() {
+        tekst = new SimpleStringProperty("0");
+    }
+
+    public String getTekst() {
+        return tekst.get();
+    }
+
+    public void setTekst(String s) {
+        this.tekst.set(s);
+    }
+
+    public SimpleStringProperty tekstProperty() {
+        return tekst;
     }
 
     public void divideClick(ActionEvent actionEvent) {
@@ -36,48 +51,75 @@ public class Controller {
     }
 
     public void no1Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn1)
-            display.setText(display.getText() + "1");
+        if (actionEvent.getSource() == btn1) {
+            if (getTekst().equals("0"))
+                setTekst("1");
+            else setTekst(getTekst() + "1");
+        }
     }
 
     public void no2Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn2)
-            display.setText(display.getText() + "2");
+        if (actionEvent.getSource() == btn2) {
+            if (getTekst().equals("0"))
+                setTekst("2");
+            else setTekst(getTekst() + "2");
+        }
     }
 
     public void no3Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn3)
-            display.setText(display.getText() + "3");
+        if (actionEvent.getSource() == btn3) {
+            if (getTekst().equals("0"))
+                setTekst("3");
+            else setTekst(getTekst() + "3");
+        }
     }
 
     public void no4Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn4)
-            display.setText(display.getText() + "4");
+        if (actionEvent.getSource() == btn4) {
+            if (getTekst().equals("0"))
+                setTekst("4");
+            else setTekst(getTekst() + "4");
+        }
     }
 
     public void no5Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn5)
-            display.setText(display.getText() + "5");
+        if (actionEvent.getSource() == btn5) {
+            if (getTekst().equals("0"))
+                setTekst("5");
+            else setTekst(getTekst() + "5");
+        }
     }
 
     public void no6Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn6)
-            display.setText(display.getText() + "6");
+        if (actionEvent.getSource() == btn6) {
+            if (getTekst().equals("0"))
+                setTekst("6");
+            else setTekst(getTekst() + "6");
+        }
     }
 
     public void no7Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn7)
-            display.setText(display.getText() + "7");
+        if (actionEvent.getSource() == btn7) {
+            if (getTekst().equals("0"))
+                setTekst("7");
+            else setTekst(getTekst() + "7");
+        }
     }
 
     public void no8Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn8)
-            display.setText(display.getText() + "8");
+        if (actionEvent.getSource() == btn8) {
+            if (getTekst().equals("0"))
+                setTekst("8");
+            else setTekst(getTekst() + "8");
+        }
     }
 
     public void no9Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn9)
-            display.setText(display.getText() + "9");
+        if (actionEvent.getSource() == btn9) {
+            if (getTekst().equals("0"))
+                setTekst("9");
+            else setTekst(getTekst() + "9");
+        }
     }
 
     public void minusClick(ActionEvent actionEvent) {
@@ -93,7 +135,13 @@ public class Controller {
     }
 
     public void no0Click(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == btn0)
-            display.setText(display.getText() + "0");
+        if (actionEvent.getSource() == btn0) {
+            if (getTekst().equals("0"))
+                setTekst("0");
+            else setTekst(getTekst() + "0");
+        }
+    }
+
+    public void percentCllick(ActionEvent actionEvent) {
     }
 }
