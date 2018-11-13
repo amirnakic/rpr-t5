@@ -137,6 +137,10 @@ public class Controller {
             rezultat = getData() - data1;
             setTekst(rezultat.toString());
         } else if (getOperation().equals("/")) {
+            if (getData() != 0 && data1 == 0) {
+                setTekst("NaN");
+                return;
+            }
             rezultat = getData() / data1;
             setTekst(rezultat.toString());
         } else if (getOperation().equals("x")) {
@@ -149,7 +153,9 @@ public class Controller {
     }
 
     public void dotClick(ActionEvent actionEvent) {
-        setTekst(getTekst() + ".");
+        if (getTekst().endsWith(".") || getTekst().contains("."))
+            return;
+        else setTekst(getTekst() + ".");
     }
 
     public void no0Click(ActionEvent actionEvent) {

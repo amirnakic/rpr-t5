@@ -10,8 +10,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
-            minWidth="-Infinity" prefHeight="386.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121"
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="386.0" minWidth="300.0"
+            prefHeight="386.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
     <padding>
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
@@ -20,30 +20,33 @@
         <URL value="@digitron.css"/>
     </stylesheets>
     <children>
-        <GridPane hgap="10.0" layoutY="80.0" prefHeight="240.0" prefWidth="220.0" vgap="10.0">
+        <GridPane hgap="10.0" layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="220.0" vgap="10.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0"/>
             </columnConstraints>
             <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS"/>
             </rowConstraints>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
             <children>
-                <Button fx:id="percentBtn" mnemonicParsing="false" onAction="#percentClick" prefHeight="51.0"
-                        prefWidth="66.0" text="\%">
+                <Button fx:id="percentBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#percentClick"
+                        prefHeight="51.0" prefWidth="66.0" text="\%">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="divideBtn" mnemonicParsing="false" onAction="#divideClick" prefHeight="51.0"
-                        prefWidth="66.0" text="/" GridPane.columnIndex="1">
+                <Button fx:id="divideBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#divideClick"
+                        prefHeight="51.0" prefWidth="66.0" text="/" GridPane.columnIndex="1">
                     <font>
                         <Font size="24.0"/>
                     </font>
@@ -110,38 +113,44 @@
                 </Button>
             </children>
         </GridPane>
-        <Button fx:id="minusBtn" layoutX="225.0" layoutY="85.0" mnemonicParsing="false" onAction="#minusClick"
-                prefHeight="51.0" prefWidth="66.0" text="-">
+        <Button fx:id="minusBtn" layoutX="225.0" layoutY="85.0" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                onAction="#minusClick" prefHeight="51.0" prefWidth="66.0" text="-">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="plusBtn" layoutX="225.0" layoutY="143.0" mnemonicParsing="false" onAction="#plusClick"
-                prefHeight="114.0" prefWidth="66.0" text="+">
+        <Button fx:id="plusBtn" layoutX="225.0" layoutY="143.0" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                onAction="#plusClick" prefHeight="114.0" prefWidth="66.0" text="+">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="equalsBtn" layoutX="225.0" layoutY="264.0" mnemonicParsing="false" onAction="#equalsClick"
-                prefHeight="114.0" prefWidth="66.0" text="=">
+        <Button fx:id="equalsBtn" layoutX="225.0" layoutY="264.0" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                onAction="#equalsClick" prefHeight="114.0" prefWidth="66.0" text="=">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="dotBtn" layoutX="150.0" layoutY="326.0" mnemonicParsing="false" onAction="#dotClick"
-                prefHeight="51.0" prefWidth="66.0" text=".">
+        <Button fx:id="dotBtn" layoutX="150.0" layoutY="326.0" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                onAction="#dotClick" prefHeight="51.0" prefWidth="66.0" text=".">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="btn0" layoutX="6.0" layoutY="326.0" mnemonicParsing="false" onAction="#no0Click"
-                prefHeight="51.0" prefWidth="134.0" text="0">
+        <Button fx:id="btn0" layoutX="6.0" layoutY="326.0" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                onAction="#no0Click" prefHeight="51.0" prefWidth="134.0" text="0">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Label fx:id="display" text="${controller.tekst}" layoutX="6.0" layoutY="6.0" prefHeight="74.0"
-               prefWidth="284.0">
+        <Label fx:id="display" layoutX="6.0" layoutY="6.0" maxHeight="1.7976931348623157E308"
+               maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="74.0"
+               prefWidth="284.0" text="${controller.tekst}">
             <font>
                 <Font size="36.0"/>
             </font>
