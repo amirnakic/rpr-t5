@@ -36,73 +36,74 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </padding>
             <children>
-                <Button fx:id="percentBtn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="\%">
+                <Button fx:id="percentBtn" mnemonicParsing="false" onAction="#percentCllick" prefHeight="51.0"
+                        prefWidth="66.0" text="\%">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="divideBtn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="/"
-                        GridPane.columnIndex="1">
+                <Button fx:id="divideBtn" mnemonicParsing="false" onAction="#divideClick" prefHeight="51.0"
+                        prefWidth="66.0" text="/" GridPane.columnIndex="1">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="multiplyBtn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="x"
-                        GridPane.columnIndex="2">
+                <Button fx:id="multiplyBtn" mnemonicParsing="false" onAction="#multiplyClick" prefHeight="51.0"
+                        prefWidth="66.0" text="x" GridPane.columnIndex="2">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no1Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="1"
-                        GridPane.rowIndex="1">
+                <Button fx:id="no1Btn" mnemonicParsing="false" onAction="#no1Click" prefHeight="51.0" prefWidth="66.0"
+                        text="1" GridPane.rowIndex="1">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no2Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="2"
-                        GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <Button fx:id="no2Btn" mnemonicParsing="false" onAction="#no2Click" prefHeight="51.0" prefWidth="66.0"
+                        text="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no3Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="3"
-                        GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <Button fx:id="no3Btn" mnemonicParsing="false" onAction="#no3Click" prefHeight="51.0" prefWidth="66.0"
+                        text="3" GridPane.columnIndex="2" GridPane.rowIndex="1">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no4Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="4"
-                        GridPane.rowIndex="2">
+                <Button fx:id="no4Btn" mnemonicParsing="false" onAction="#no4Click" prefHeight="51.0" prefWidth="66.0"
+                        text="4" GridPane.rowIndex="2">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no5Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="5"
-                        GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <Button fx:id="no5Btn" mnemonicParsing="false" onAction="#no5Click" prefHeight="51.0" prefWidth="66.0"
+                        text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no6Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="6"
-                        GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <Button fx:id="no6Btn" mnemonicParsing="false" onAction="#no6Click" prefHeight="51.0" prefWidth="66.0"
+                        text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no7Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="7"
-                        GridPane.rowIndex="3">
+                <Button fx:id="no7Btn" mnemonicParsing="false" onAction="#no7Click" prefHeight="51.0" prefWidth="66.0"
+                        text="7" GridPane.rowIndex="3">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no8Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="8"
-                        GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <Button fx:id="no8Btn" mnemonicParsing="false" onAction="#no8Click" prefHeight="51.0" prefWidth="66.0"
+                        text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
                     <font>
                         <Font size="24.0"/>
                     </font>
                 </Button>
-                <Button fx:id="no9Btn" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" text="9"
-                        GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <Button fx:id="no9Btn" mnemonicParsing="false" onAction="#no9Click" prefHeight="51.0" prefWidth="66.0"
+                        text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
                     <font>
                         <Font size="24.0"/>
                     </font>
@@ -116,32 +117,32 @@
                 <Font size="36.0"/>
             </font>
         </Label>
-        <Button fx:id="minusBtn" layoutX="225.0" layoutY="85.0" mnemonicParsing="false" prefHeight="51.0"
-                prefWidth="66.0" text="-">
+        <Button fx:id="minusBtn" layoutX="225.0" layoutY="85.0" mnemonicParsing="false" onAction="#minusClick"
+                prefHeight="51.0" prefWidth="66.0" text="-">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="plusBtn" layoutX="225.0" layoutY="143.0" mnemonicParsing="false" prefHeight="114.0"
-                prefWidth="66.0" text="+">
+        <Button fx:id="plusBtn" layoutX="225.0" layoutY="143.0" mnemonicParsing="false" onAction="#plusClick"
+                prefHeight="114.0" prefWidth="66.0" text="+">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="equalsBtn" layoutX="225.0" layoutY="264.0" mnemonicParsing="false" prefHeight="114.0"
-                prefWidth="66.0" text="=">
+        <Button fx:id="equalsBtn" layoutX="225.0" layoutY="264.0" mnemonicParsing="false" onAction="#equalsClick"
+                prefHeight="114.0" prefWidth="66.0" text="=">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="dotBtn" layoutX="150.0" layoutY="326.0" mnemonicParsing="false" prefHeight="51.0"
-                prefWidth="66.0" text=".">
+        <Button fx:id="dotBtn" layoutX="150.0" layoutY="326.0" mnemonicParsing="false" onAction="#dotClick"
+                prefHeight="51.0" prefWidth="66.0" text=".">
             <font>
                 <Font size="24.0"/>
             </font>
         </Button>
-        <Button fx:id="no0Btn" layoutX="6.0" layoutY="326.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="134.0"
-                text="0">
+        <Button fx:id="no0Btn" layoutX="6.0" layoutY="326.0" mnemonicParsing="false" onAction="#no0Click"
+                prefHeight="51.0" prefWidth="134.0" text="0">
             <font>
                 <Font size="24.0"/>
             </font>
