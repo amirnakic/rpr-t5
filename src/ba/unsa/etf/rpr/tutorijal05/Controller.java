@@ -3,11 +3,10 @@ package ba.unsa.etf.rpr.tutorijal05;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 
 public class Controller {
 
-    private SimpleStringProperty tekst;
     public Button btn1;
     public Button btn2;
     public Button btn3;
@@ -25,19 +24,7 @@ public class Controller {
     public Button plusBtn;
     public Button equalsBtn;
     public Button dotBtn;
-    public TextField display;
-
-    public Controller() {
-        tekst = new SimpleStringProperty("0");
-    }
-
-    public String getTekst() {
-        return tekst.get();
-    }
-
-    public void setTekst(String s) {
-        this.tekst.set(s);
-    }
+    public Label display;
 
     public void percentCllick(ActionEvent actionEvent) {
     }
